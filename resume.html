@@ -1,0 +1,237 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elyes CHERFA</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <!--<script src="https://unpkg.com/feather-icons"></script> -->
+    <script src="https://kit.fontawesome.com/a0844274b9.js" crossorigin="anonymous"></script>
+  </head>
+  <body>   
+    <section>
+      <!-- MOBILE NAVIGATION -->
+      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <!--<a href="#home" class="w3-bar-item w3-button w3-hover-none">CURRICULUM VITAE</a>-->
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+      </div>
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="#about" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="location.href = './index.html'">ABOUT</a>
+        <a href="#publications" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="location.href = './publications.html'">PUBLICATIONS</a>
+        <a href="#teaching" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="location.href = './teaching.html'">TEACHING</a>
+        <a href="#resume" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="location.href = './resume.html'">RESUME</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="location.href = './contact.html'">CONTACT</a>
+      </div>
+
+      <!-- SOCIAL SECTION -->
+      <section class="image-section w3-quarter w3-fixed w3-padding-small">
+        <!--IMAGE/AVATAR-->
+        <img src="Resources/Image.jpg" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"/>
+        <!--CV DOWNLOAD BUTTON-->
+        <div class="w3-container w3-padding-16">
+          <a href="Resources/CV.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank" download="CV.pdf">
+            <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+            <span class="w3-margin-left download-text">DOWNLOAD CV</span>
+          </a>
+        </div>
+        
+        <section>
+          <div class="icon-bar">
+            <a href="https://github.com/Cherfalyes"><i class="fa-brands fa-github-square fa-3x icons"></i></a>
+            <p style="color:white">github</p>
+          </div>
+          <div>  
+            <a href="https://orcid.org/0000-0003-3014-3056"><i class="fa-brands fa-orcid fa-3x icons"></i></a>
+            <p style="color:white">ORCID</p>
+          </div>
+          <div>
+            <a href="https://www.linkedin.com/in/elyes-cherfa/"><i class="fa-brands fa-linkedin fa-3x icons"></i></a>
+            <p style="color:white">LinkedIn</p>
+          </div>
+          <div>  
+            <a href="https://scholar.google.com/citations?user=_gll1HcAAAAJ&hl=fr&oi=ao"><i class="fa-brands fa-google fa-3x icons"></i></a>
+            <p style="color:white">Google Scholar</p>
+          </div>
+          <div>
+            <a href="https://twitter.com/cherfalyes"><i class="fa-brands fa-twitter fa-3x icons"></i></a>
+            <p style="color:white">Twitter</p>
+          </div>
+          <div>
+            <a href="https://dblp.org/pid/262/0801.html"><i class="fa-solid fa-book-bookmark fa-3x icons"></i></a>
+            <p style="color:white">DBLP</p>
+          </div>
+          <div>
+            <a href="https://www.researchgate.net/profile/Elyes-Cherfa/"><i class="fa-brands fa-researchgate fa-3x icons"></i></a>
+            <p style="color:white">ResearchGate</p>
+          </div>
+        </section>  
+      </section>
+
+      <!--CV CONTENT SECTION-->
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION-->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="location.href = './contact.html'">CONTACT</a>
+          <a href="#resume" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="location.href = './resume.html'">RESUME</a>
+          <a href="#teaching" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="location.href = './teaching.html'">TEACHING</a>
+          <a href="#publications" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="location.href = './publications.html'">PUBLICATIONS</a>
+          <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="location.href = './index.html'">ABOUT</a>
+        </div>
+        <div class="content-container w3-margin-top-2">
+          <!--HOME SECTION-->
+          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+            <!--<p style="font-style: italic; font-size:x-large;">"The mind is the limit. When you face your struggles, you overcome them."</p>-->
+            <h1>Elyes CHERFA</h2>
+            <!--<h2>Community manager</h3>-->
+            <p></p>
+          </div>
+
+          <!--PROFESSIONAL EXPERIENCE SECTION-->
+          <div id="ProfessionalExperience" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">Professional Experience</h2>
+           <!---EDUCATION SUBSECTION-->
+          <div class="w3-container w3-margin-top-2 w3-cursive">
+              <!--<h3 class="w3-border-amber">MY EMPLOYMENT HISTORY</h3>-->
+                <h4>Temporary Teacher & Researcher - University of Rennes 1</h4>
+                <p>September 2021 - Present </p>
+                <ul  style="font-weight: 500;">
+                  <li>Creating materials for courses & tutorials</li>
+                  <li>Evolution in term of Technical & Pedagogical skills</li>
+                  <li>Teaching various courses, such as:
+                    <ul>
+                    <li>Network Security & Internet of Things</li>
+                    <li>Synchronization & Parallel Programming</li>
+                    <li>Modern Software Development Industrialization</li>
+                    <li>Databases</li>
+                    <li>Network & IoT</li>
+                    <li>Software Architecture</li>
+                    <li>Software Engineering for Begginers</li>
+                    </ul>
+                    <li>Working within DiverSE team on automating the co-evolution of code & metamodels</li>
+                  </li>
+                </ul>
+                <h4>Research Engineer & PhD Student - Segula Technologies France</h4>
+                <p>November 2017 - December 2021 </p>
+                <ul  style="font-weight: 500;">
+                  <li>CIFRE Thesis on assisting precise metamodeling</li>
+                  <ul>
+                    <li>Improve safety of modeling languages by assisting the specification of OCL constraints</li>
+                    <li>The Thesis falls within the Model-Driven Engineering & the Security-by-Design domains</li>
+                    <li>Validation of thesis works with the help of Polytechnical School of Montepellier Students</li>
+                    <li>Valuation of thesis works in high quality conferences</li>
+                  </ul>
+                  <li>Integration in industrial environment</li>
+                  <li>Vulgarization of thesis works</li>
+                  <li>Work within a multidisciplinary team on an industrial project</li>
+                  <li>Writing scientific papers</li>
+                  <li>Actif member of GDR GPL & GDR Security</li>
+                </ul>
+
+                <h4>Temporary Teacher - University of Montpellier</h4>
+                <p>December 2021 </p>
+                <ul  style="font-weight: 500;">
+                  <li>Preparing materials and teaching a course about</li>
+                  <ul>
+                    <li>Software Engineering & Artificial Intelligence</li>
+                  </ul>
+                </ul>
+
+                <h4>Temporary Teacher - University South Brittany - Vannes</h4>
+                <p>September 2018 - June 2020 </p>
+                <ul  style="font-weight: 500;">
+                  <li>Teaching tutorials on : </li>
+                  <ul>
+                    <li>Introduction to computer systems</li>
+                    <li>Introduction to python programming</li>
+                  </ul>
+                </ul>
+
+                <h4>Master Internship - IRISA Lab, University South Brittany - Vannes</h4>
+                <p>May 2017 - October 2017 </p>
+                <ul  style="font-weight: 500;">
+                  <li>Working on automating the inference of OCL constraints from models examples & counter-examples using genetic algorithm</li>
+                  <li>Research field initiation</li>
+                </ul>
+            </div>
+          </div>  
+          <!--EDUCATION-->
+          <div id="Education" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">Education</h2>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+
+            <!---SUBSECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <!--<h3 class="w3-border-amber">MY EDUCATION</h3>-->
+                <h4>PhD, Software Engineering, University South Brittany - France</h4>
+                <p>November 2017 - December 2021 </p>
+                <h4>Master Degree, Software Engineering, University of Blida - Algeria</h4>
+                <p>September 2015 - September 2017 </p>
+                <h4>License Degree, Software Engineering, University of Blida - Algeria</h4>
+                <p>September 2012 - June 2015 </p>
+                <h4>CISCO Certification - CCNA2 - INSFP Blida</h4>
+                <p>January 2015 - June 2015 </p>
+            </div>
+          </div>  
+
+
+          <!--PROFESSIONAL EXPERIENCE SECTION-->
+          <div id="ProfessionalExperience" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY SKILLS</h2>
+            <h3>Technical Skills</h3>
+            <p><span style="font-weight:bold">Modeling : </span>Eclipse Modeling Framework, UML, MOF, OCL, Ecore, Xtend, Xtext, DSL</p>
+            <p><span style="font-weight:bold">Programming : </span>Java, Prolog, C & Python (intermediate)</p>
+            <p><span style="font-weight:bold">Domains : </span>Metamodeling, Model-Driven Engineering, Security-by-Design</p>
+            <h3>Soft Skills</h3>
+            <p>Autonomy, Working in group, Vulgarization of works.
+            <h3>Languages</h3>
+            <p><span style="font-weight:bold">Arabic : </span>My native language</p>
+            <p><span style="font-weight:bold">French : </span>Bilingual</p>
+            <p><span style="font-weight:bold">English : </span>Technical skills</p>
+          </div>
+
+          <!--CONTACT SECTION-->
+          <div id="Hobbies" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY HOBBIES & INTERESTS</h3>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+              <p><span style="font-weight:bold">Judo : </span>I have been a judoka for two years (orange belt) in my native city Blida with IRBOY club.</p>
+              <p><span style="font-weight:bold">BasketBall : </span>Besides my ethernal love for basketball, I was a player of Trèfle BasketBall Blida team (T3B) for three years. A very interesting experience which unfortunately stopped during my baccalaureate.</p>
+              <p><span style="font-weight:bold">E-Sport : </span>I have always been fascinated by video games, especially FPS games, and the ability of our brain to adapt the mechanical gestures in shooting games.</p>
+              <p><span style="font-weight:bold">Blood donation : </span>As a human being with good health, it is very important to give our blood. This small activity that takes one hour saves many people that are in need of it. <a href="https://mon-rdv-dondesang.efs.sante.fr/">EFS</a></p>
+              <p><span style="font-weight:bold">Environment Protection : </span>I have been a member of "Association Belle-Vue pour la protection de l'environement Bouarfa", a period during which I actively participated in forestation campaigns, as well as plogging and ecojogging campaigns.</p>
+              <p><span style="font-weight:bold">AIESEC : </span>During my university period, I was a part of AIESEC, the biggest international association, led by youth, for youth. The principal motivation is to propose internships for youth to work on one of the 17 United Nations <a href="https://sdgs.un.org/fr/goals">Sustainable Development Goals</a>. I may say that it was one of the best experiences I have ever had.</p>
+            </div>
+          </div>
+
+        <!--FOOTER-->
+        <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+          <p>© 2022 - Elyes CHERFA</p>
+        <!-- End footer -->
+        </footer>
+
+        <!--END OF CV SECTION-->
+      </section>      
+    </section>
+    <script>
+      // Function to toggle mobile navigation
+      function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        if (nav.classList.contains('w3-show')) {
+          nav.classList.remove('w3-show');
+        } else { 
+          nav.classList.add('w3-show');
+        }
+      }
+    </script>
+    <script>
+      // Script to load feather icons
+      feather.replace()
+    </script>
+  </body>
+</html>
